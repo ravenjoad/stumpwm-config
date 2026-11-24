@@ -146,6 +146,13 @@
   :key (kbd "z")
   :pullp nil)
 
+(defprogram-shortcut signal
+  :command "signal-desktop"
+  :props '(:class "signal" :instance "signal")
+  :map *messaging-keymap*
+  :key (kbd "S")
+  :pullp nil)
+
 ;; If we use *prefix-key* C-q, let the next keybinding be sent to the selected
 ;; frame. This mirrors the kind of behavior Emacs has.
 (define-key *root-map* (kbd "C-q") "send-raw-key")
